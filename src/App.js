@@ -11,25 +11,19 @@ function App() {
   return (
     <Container className="top_60">
       <Grid container spacing={5}>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={4}
-          lg={3}
-        >
+        <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
-        <Grid item xs >
-         
+        <Grid item xs>
           <Router>
-          <Header />  
-            <Routes>
-            <Route path="/portfolio" element={<Portfolio/>} />
-      
-            <Route path="/" element={<Resume />} />
-            </Routes>
+            <Header />
+            <div className="main-content container_shadow">
+              <Routes>
+                <Route path="/portfolio" element={<Portfolio />} />
 
+                <Route path="/" element={<Resume />} />
+              </Routes>
+            </div>
           </Router>
           <Footer />
         </Grid>
