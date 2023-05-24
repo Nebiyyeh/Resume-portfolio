@@ -6,6 +6,8 @@ import './Profile.css'
 import resumeData from '../../utils/resumeData'
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineContent from '@mui/lab/TimelineContent';
+import CustomButton from '../button/Button';
+import GetAppIcon from '@mui/icons-material/GetApp';
 
 const CustomTimeLineItem = ({ title, text, link }) => (
 
@@ -45,12 +47,10 @@ const Profile = () => {
             ))}
        
         </CustomTimeline>
+        <div className='button_container'>
+          <CustomButton text={"Download CV"} icon={<GetAppIcon/>} />
+        </div>
         
-
-
-         <br/>
-         <button>The button</button>
-
        </div>
        
     </div>

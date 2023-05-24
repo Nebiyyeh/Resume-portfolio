@@ -20,9 +20,10 @@ function App() {
         >
           <Profile />
         </Grid>
-        <Grid item xs style={{ backgroundColor: "white" }}>
-          <Header />
+        <Grid item xs >
+         
           <Router>
+          <Header />  
             <Routes>
             <Route path="/portfolio" element={<Portfolio/>} />
       
