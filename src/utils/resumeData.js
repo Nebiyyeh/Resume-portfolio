@@ -128,4 +128,29 @@ export default {
       ],
     },
   ],
+  
+  portfolio: [
+    {
+      tag: "React",
+      image: "",
+      title: "HTML to react",
+      description: "First react work to convert a web page from regular HTML to React single page application",
+      links: [
+        {link: "", icon: <GitHubIcon/> },
+        {link: "", icon: <GitHubIcon/> }
+      ]
+    },
+    {
+      tag: "SpringBoot",
+      image: "",
+      title: "Library app",
+      description: "Backend application of Library management system",
+      links: [
+        {link: "", icon: <GitHubIcon/> },
+        {link: "", icon: <GitHubIcon/> }
+      ]
+    }
+  ]
+
+
 };
