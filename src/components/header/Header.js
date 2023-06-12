@@ -8,6 +8,16 @@ import HomeIcon from "@mui/icons-material/Home";
 import "./Header.css";
 
 const Header = (props) => {
+
+  function gotoContact() {
+    const element = document.getElementById("contactUs");
+    if (element != null) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      alert("Please Go to Resume Page and Click Again");
+    }
+  }
+
   const pathName = props?.location?.pathName;
 
   return (
@@ -50,7 +60,11 @@ const Header = (props) => {
             </a>
           ))}
 
-          <CustomButton text={"Contact me"} icon={<TelegramIcon />} />
+          <CustomButton
+            text={"Contact me"}
+            icon={<TelegramIcon />}
+            onClickMe={gotoContact}
+          />
         </div>
       </Navbar.Collapse>
     </Navbar>

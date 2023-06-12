@@ -1,13 +1,24 @@
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Language from "@mui/icons-material/Language";
+import Feane from "../assets/images/feane.png";
+import CarRental from "../assets/images/Car_Rental.png";
+import CarRent02 from "../assets/images/about.png";
+import CarRent03 from "../assets/images/home.png";
+import CarRent04 from "../assets/images/login.png";
+import CarRent05 from "../assets/images/contact.png";
+import CarRent06 from "../assets/images/register.png";
+import Portfolio from "../assets/images/portfolio.png";
+import Portfolio02 from "../assets/images/portfolio02.png";
+import Feane02 from "../assets/images/feane02.png"
 
 export default {
   name: " Nebiyyeh Dagdeviren",
   title: " Full Stack Java Developer",
 
   email: " nebiyyeh.d@gmail.com",
-  address: "Corpus Christi, TX",
+  address: "San Antonio, TX",
 
   socials: {
     LinkedIn: {
@@ -24,7 +35,7 @@ export default {
   },
 
   about:
-    "Curiosity and enthusiasm have been my greatest teachers as I turned my creativity, critical thinking, logical reasoning and problem solving talents into software development skills. \n As being eager to learn further technologies I have gained broad knowledge and hands-on experience in; \n     - Spring MVC, Spring Boot and Spring Security with JWT-based authentication \n   - Hibernate, JDBC \n    - Postman API, Swagger API  \n  - PostgreSQL, Oracle SQL and MongoDB \n  - Microservices Architecture, Docker \n - HTML, CSS, SASS, Bootstrap \n - JavaScript, React JS \n - Test Driven Development, Unit Testing \n - Git/GitHub and SDLC       \n I have also been a researcher and a teacher for a while on my life journey which helped me to gain different perspectives as well. \n  My friends and colleagues would describe me as helpful, easygoing, collaborative, wise, kind and witty. \n  I describe myself as a lifelong learner and problem solver.",
+    "Curiosity and enthusiasm have been my greatest teachers as I turned my creativity, critical thinking, logical reasoning and problem solving talents into software development skills. \n \n As being eager to learn further technologies I have gained broad knowledge and hands-on experience in; \n     - Spring MVC, Spring Boot and Spring Security with JWT-based authentication \n   - Hibernate, JDBC \n    - Postman API, Swagger API  \n  - PostgreSQL, Oracle SQL and MongoDB \n  - Microservices Architecture, Docker \n - HTML, CSS, SASS, Bootstrap \n - JavaScript, React JS \n - Test Driven Development, Unit Testing \n - Git/GitHub and SDLC     \n  \n I have also been a researcher and a teacher for a while on my life journey which helped me to gain different perspectives. My friends and colleagues would describe me as helpful, easygoing, collaborative, wise, kind and witty. I describe myself as a lifelong learner and problem solver.",
 
   experiences: [
     {
@@ -128,29 +139,69 @@ export default {
       ],
     },
   ],
-  
+
   portfolio: [
     {
       tag: "React",
-      image: "",
-      title: "HTML to react",
-      description: "First react work to convert a web page from regular HTML to React single page application",
+      images:[
+        Feane,
+        Feane02
+      ], 
+      title: "HTML to ReactJS",
+      caption: "A single page application with ReactJS",
+      description:
+        "My very first React JS work to convert a web page from regular HTML to ReactJS single page application",
       links: [
-        {link: "", icon: <GitHubIcon/> },
-        {link: "", icon: <GitHubIcon/> }
-      ]
+        { link: "https://github.com/Nebiyyeh/HTML-to-react", icon: <GitHubIcon /> },
+        {
+          link: "https://html-to-react-2b9l.vercel.app/",
+          icon: <Language />,
+        },
+      ],
+    },
+    {
+      tag: "React",
+      images:[Portfolio, Portfolio02], 
+      title: "My portfolio-resume website",
+      caption: "Portfolio with ReactJS",
+      description:
+        "My portfolio website developed with ReactJs, CSS, Mareial-UI",
+      links: [
+        { link: "https://github.com/Nebiyyeh/Resume-portfolio", icon: <GitHubIcon /> },
+        {
+          link: "",
+          icon: <Language />,
+        },
+      ],
     },
     {
       tag: "SpringBoot",
-      image: "",
-      title: "Library app",
-      description: "Backend application of Library management system",
+      images:["",], 
+      title: "Library Management System",
+      caption: "A Backend application developed with SpringBoot framework",
+      description: "Backend application of Library management system designed with SpringBoot framework ",
       links: [
-        {link: "", icon: <GitHubIcon/> },
-        {link: "", icon: <GitHubIcon/> }
-      ]
-    }
-  ]
+        { link: "https://github.com/Nebiyyeh/library-management-system", icon: <GitHubIcon /> },
+        { link: "", icon: <Language /> },
+      ],
+    },
+    {
+      tag: "SpringBoot",
+      images: [
+        CarRental,
+        CarRent02,
+        CarRent03,
+        CarRent04,
+        CarRent05,
+        CarRent06
+      ],
+      title: "Car Rental Web Application",
+      caption: "Full Stack Web application designed with SpringBoot framework, and ReactJS",
+      description: "Backend with SpringBoot framework, Spring Security and PostgreSQL database, UI with ReactJS, CSS ",
+      links: [
+        { link: "https://www.safeandfastcars.com/", icon: <Language /> },
+      ],
+    },
 
-
+  ],
 };
